@@ -21,7 +21,7 @@ public class LMS extends HttpServlet {
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://34.93.191.88:3306/khetra_db", "rohit", "Rohit_@1234");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/khetra_db", "rohit", "Rohit_@1234");
 			PreparedStatement ps = con.prepareStatement("insert into LMS(name,mobile_no,lead_type,pin_code) values(?,?,?,?)");
     
 			ps.setString(1, n);

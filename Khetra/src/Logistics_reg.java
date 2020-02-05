@@ -25,7 +25,7 @@ String fs=request.getParameter("image");
           
 try{  
 Class.forName("com.mysql.jdbc.Driver");  
-Connection con=DriverManager.getConnection("jdbc:mysql://34.93.93.101:3306/sonoo", "root", "root");   
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sonoo", "root", "root");   
 
 PreparedStatement ps=con.prepareStatement("insert into Logistics_reg(name,license,mobile,pan,aadhar,transport,bank_ac,ifsc,address,image) values(?,?,?,?,?,?,?,?,?,?)");  
   

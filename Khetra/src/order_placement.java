@@ -38,7 +38,7 @@ String crop_qty[]=request.getParameterValues("crop_qty");
 
 try{  
 Class.forName("com.mysql.jdbc.Driver");  
-Connection con = DriverManager.getConnection("jdbc:mysql://34.93.191.88:3306/khetra_db", "rohit", "Rohit_@1234");   
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/khetra_db", "rohit", "Rohit_@1234");   
 for (int j = 0; j < crop_name.length; j++) {
 PreparedStatement ps=con.prepareStatement("insert into orderDetails(s_name,address,mobile_No,email,city,DateTime,category,crop_name,crop_unit,crop_qty) values(?,?,?,?,?,NOW(),?,?,?,?)");  
 

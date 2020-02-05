@@ -27,7 +27,7 @@ public class Buyer_reg extends HttpServlet {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://34.93.191.88:3306/khetra_db", "rohit", "Rohit_@1234");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/khetra_db", "rohit", "Rohit_@1234");
 	        		
 			
 			PreparedStatement ps = con.prepareStatement("insert into buyer_reg(business_lic_no,name,mobile,shop_name,shop_address,pincode,shop_area_in_sq_ft,shop_img,PAN_Card,Aadhar,Bank_acc_no,IFSC_code,GST_no) values(?,?,?,?,?,?,?,?,?,?,?,?,?)");           

@@ -27,7 +27,7 @@ String m=request.getParameter("mobile");
           
 try{  
 Class.forName("com.mysql.jdbc.Driver");  
-Connection con = DriverManager.getConnection("jdbc:mysql://34.93.191.88:3306/khetra_db", "rohit", "Rohit_@1234");  
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/khetra_db", "rohit", "Rohit_@1234");  
 
 PreparedStatement ps=con.prepareStatement("insert into supplier_reg(name,address,list,city,state,zip,mobile) values(?,?,?,?,?,?,?)");  
   
