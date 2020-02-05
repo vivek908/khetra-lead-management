@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demand Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/demand_registration.css" />
+    <link rel = "icon" href ="images/khetra_logo.jpg" type = "image/x-icon">
+</head>
+
+<body>
+
+    <h1 id="title">Demand Registration</h1>
+    <div id="form-outer">
+        <p id="description">
+            Mandatory fields are marked with an asterisk (*)
+        </p>
+        <form id="demand-form" method="post" action="servlet/demand_reg">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="b_type">* Buyers Type: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="b_type" class="dropdown" required>
+                        <option disabled selected value="">Select an Option</option>
+                        <option value="Bakery">Bakery</option>
+                        <option value="Catering">Catering</option>
+                        <option value="Corporate">Corporate</option>
+                        <option value="Customer">Customer</option>
+                        <option value="Event">Event</option>
+                        <option value="Food Processing">Food Processing</option>
+                        <option value="Hawker">Hawker</option>
+                        <option value="Hostel">Hostel</option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Institution">Institution</option>
+                        <option value="Juice Shop">Juice Shop</option>
+                        <option value="Kirana Store">Kirana Store</option>
+                        <option value="Mess">Mess</option>
+                        <option value="NGO">NGO</option>
+                        <option value="Office">Office</option>
+                        <option value="Online Aggregators">Online Aggregators</option>
+                        <option value="PG">PG</option>
+                        <option value="Retailer">Retailer</option>
+                        <option value="Super Market">Super Market</option>
+                        <option value="Temple">Temple</option>
+                        <option value="Whole seller">Whole seller</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="lic_no"> Business License Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="lic_no" id="name" class="input-field" placeholder="Enter your Business license number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="o_name">* Owner Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="o_name" id="name" class="input-field" pattern="[A-Za-z].{4,}" placeholder="Enter your name" required title="Please Enter a valid name" />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="mobile-label" for="mobile">* Mobile Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="mobile" id="number" class="input-field" pattern="[6789][0-9]{9}" placeholder="Enter Mobile Number" title="Please Enter a valid Mobile Number" required />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="shop_name">* Shop Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="shop_name" id="name" class="input-field" placeholder="Enter your shop name" required />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="shop_address">* Shop Address: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="shop_address" id="name" class="input-field" placeholder="Enter your shop address" required />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="pin">* Pin Code: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="pin" id="name" class="input-field" pattern="[0-9]{6}" placeholder="Enter your area pin code number" title="Please Enter a valid Pin Code" required />
+                </div>
+            </div>
+          
+             <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="city">* City: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="city" class="dropdown" required>
+                        <option disabled selected value="">Select an Option</option>
+                        <option value="Bangalore">Bangalore(KA)</option>
+                        <option value="Durgapur">Durgapur(WB)</option>
+                        <option value="Kolkata">Kolkata(WB)</option>
+                        <option value="Hyderabad">Hyderabad(TS)</option>
+                        <option value="Delhi">Delhi(DL)</option>
+                     </select>
+                 </div>
+                </div>
+     
+            <div class="rowTab">
+              <div class="labels">
+                <label for="delivery">* Delivery Slot</label>
+            </div>
+            <div class="rightTab">
+                <br>
+              <input type="radio" name="delivery" value="6 AM - 9 AM" checked> 6 AM - 9 AM<br>
+              <input type="radio" name="delivery" value="9 AM - 11 AM"> 9 AM - 11 AM<br>
+              <input type="radio" name="delivery" value="other"> Other
+            </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="pan"> PAN Card Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="pan" id="name" class="input-field" pattern="^([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}?$"placeholder="Enter your PAN Card number" title="Please Enter a valid PAN Card Number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name"> Aadhar Card Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="number" name="aadhar" id="name" class="input-field" placeholder="Enter your Aadhar card number" pattern="\d{12}" title="Please Enter a valid Aadhar Card Number" />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="bank_acc"> Bank Account Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="number" name="bank_acc" id="name" class="input-field" placeholder="Enter your Bank Account number" pattern="[0-9]{10,16}" title="Please Enter a valid Bank Account Number" />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="ifsc"> IFSC Code: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="ifsc" id="name" class="input-field" placeholder="Enter your Bank IFSC Code" pattern="^[A-Za-z]{4}[0-9]{7}$" title="Please Enter a valid IFSC Code"/>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="license-label" for="gst"> GST Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="gst" id="name" class="input-field" placeholder="Enter GST number" pattern="^([0-9]){12}([A-Za-z]){3}?$" title="Please Enter a valid GST Number">
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body >
+
+</html>

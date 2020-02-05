@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logistic Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/Logistic_reg.css" />
+    <link rel = "icon" href ="images/khetra_logo.jpg" type = "image/x-icon">
+</head>
+
+<body>
+    <h1 id="title">Logistic Registration</h1>
+    <div id="form-outer">
+        <p id="description">
+            Welcome to Logistic registration form
+        </p>
+        <form id="supplier-form" method="post" action="servlet/logistics">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="license">* Driving Licesce Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="license" id="name" class="input-field" placeholder="Enter your Driving Licence Number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="mobile">* Mobile Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="mobile" id="name" class="input-field" placeholder="Enter your Contact Number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="pan">* PAN Card Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="pan" id="name" class="input-field" placeholder="Enter your PAN Card Number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="aadhar">* Aadhar Card Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="aadhar" id="name" class="input-field" placeholder="Enter your Aadhar Card Number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="transport">* Transportation Type: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="transport" class="dropdown">
+                        <option disabled value="select">Choose</option>
+                        <option value="Auto">Auto</option>
+                        <option value="Goods">Goods</option>
+                        <option value="Truck">Truck</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="bank">* Bank Account Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="bank" id="name" class="input-field" placeholder="Enter your Bank Account number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="ifsc">* IFSC Code: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="ifsc" id="name" class="input-field" placeholder="Enter IFSC Code of your Bank Account">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="address">* Address: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="address" id="name" class="input-field" placeholder="Enter your Address">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="image">* Attach Image: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="image" class="dropdown">
+                            <option disabled value="select">Choose</option>
+                            <option value="Upload">Upload</option>
+                            <option value="Snapshot">Tale a snapshot</option>
+                            <option value="Google">Google Drive</option>
+                        </select>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

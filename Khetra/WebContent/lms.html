@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/LMS.css" />
+    <link rel = "icon" href ="images/khetra_logo.jpg" type = "image/x-icon">
+    <meta charset="UTF-8">
+    <title>Lead Registration</title>
+</head>
+
+<body translate="no">
+    <h1 id="title">Lead Registration</h1>
+    <div id="form-outer">
+        <p id="description">
+            All Mandatory fields are marked with an asterisk (*)
+        </p>
+        <form action="servlet/LMS" method="post">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" pattern="[A-Za-z].{4,}" placeholder="Enter full name" required title="Please Enter Valid Name">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="mobile-label" for="mobile">* Mobile Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="mobile" class="input-field" placeholder="Enter mobile number" required pattern="[6789][0-9]{9}" title="Please Enter Valid mobile number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="currentPos">* Lead Type</label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="currentPos" class="dropdown" required >
+                   <option disabled value="" selected>Select an option</option>
+                   <option value="Farmer">Farmer</option>
+    <option value="Retailers">Retailers</option>
+    <option value="Hotels">Hotels</option>
+     <option value="Supply-Vendor">Supply-Vendor</option>
+    <option value="other">Other</option>
+    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="pin-label" for="pin">* Pin Code: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="pin" class="input-field" placeholder="Enter Pincode" required pattern="^[0-9]{6}$" title="Enter Valid Pin Code">
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel = "icon" href ="https://files.slack.com/files-pri/TGL9P0K6C-FNGGBMMG9/khetra_logo.jpg" type = "image/x-icon">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Order Place Form</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+
+    <link href="css/graphics.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/crofarm.css" rel="stylesheet">
+    <link href="css/crousel.css" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.js"></script>
+</head>
+
+<body>
+    <div class="wrapper h100">
+        <div class="container h100 farmer" id="top-nav">
+            <div class="clearfix"></div>
+            <!-- about us section -->
+            <section class="farmer-detail footer-padding text-left">
+                <div class="container">
+                    <div class="col-md-10 col-md-offset-1 farmer-form">
+                        <h2 class="green-txt hdr-txt text-center">Order Place Form</h2>
+                        <p class="text-center">Please provide your details to connect with us.</p>
+
+                        <div ng-controller="MyController" class="mr-t-25">
+
+                            <form class="form-horizontal col-xs-12 col-md-12 farmer-form" id="farmer" name="farmerForm" action="order_placement" method='post'>
+                                <fieldset>
+                                    <div class="row1">
+                                        <div>
+                                            <!-- Name input-->
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="textinput">Shop Name<span>*</span></label>
+                                                <div class="col-md-12">
+                                                    <select id="name" ng-model="myForm.name" ng-maxlength="25" name="name" class="form-control" required>
+                      <option value=''>--Select --</option>	
+                       <option value="Manoranjan">Manoranjan</option>
+<option value="AK Vegetable and fruits">AK Vegetable and fruits</option>
+<option value="SL Fresh fruits and vegetables">SL Fresh fruits and vegetables</option>
+<option value="Kaveri Vegetable">Kaveri Vegetable</option>
+<option value="New Daily Fresh">New Daily Fresh</option>
+<option value="Green Fruits and Vegetable">Green Fruits and Vegetable</option>
+<option value="Manoranjan - 2">Manoranjan - 2</option>
+<option value="Shafeer Vegetables">Shafeer Vegetables</option>
+<option value="KR Fruits and Vegetables">KR Fruits and Vegetables</option>
+<option value="Abdul Fruits">Abdul Fruits</option>
+<option value="S & M Juice Center">S & M Juice Center</option>
+<option value="Sri Krishna Fruits and Vegetables">Sri Krishna Fruits and Vegetables</option>
+<option value="Rajendra Vegetables">Rajendra Vegetables</option>
+<option value="Green Land">Green Land</option>
+<option value="Salim Noodles Shop">Salim Noodles Shop</option>
+<option value="Sridevi Andhra Mess">Sridevi Andhra Mess</option>
+<option value="Asha Niketan FMR India">Asha Niketan FMR India</option>
+<option value="Bangalore Fruits and Horticulture">Bangalore Fruits and Horticulture</option>
+<option value="Village Farm Vegetables">Village Farm Vegetables</option>
+<option value="Hyderabad Biryani">Hyderabad Biryani</option>
+<option value="SN Karnataka">SN Karnataka</option>
+<option value="Supriya Vegetables">Supriya Vegetables</option>
+<option value="JK Provisional Store">JK Provisional Store</option>
+<option value="GK Provision Store">GK Provision Store</option>
+<option value="Shree Basaveshwara Grocery">Shree Basaveshwara Grocery</option>
+<option value="The Bahuballi Restaurant">The Bahuballi Restaurant</option>
+<option value="Pooja Departmental Store">Pooja Departmental Store</option>
+<option value="Sethji Home Made Food">Sethji Home Made Food</option>
+<option value="Maghai Pan house">Maghai Pan house</option>
+<option value="Banglore Fruits & Vegetables">Banglore Fruits & Vegetables</option>
+<option value="Swathi PG">Swathi PG</option>
+<option value="Makers Hotel">Makers Hotel</option>
+<option value="Max shoppie">Max shoppie</option>
+<option value="Tiny super market">Tiny super market</option>
+<option value="Real fresh">Real fresh</option>
+<option value="Leaf land">Leaf land</option>
+<option value="Top n Town">Top n Town</option>
+<option value="Farm Fresh Super Market">Farm Fresh Super Market</option>
+<option value="Abhiruchi Andhra mess">Abhiruchi Andhra mess</option>
+<option value="Green Fresh">Green Fresh</option>
+<option value="Maruthi restaurant">Maruthi restaurant</option>
+<option value="Bangalore Horticulture">Bangalore Horticulture</option>
+
+                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- Address line1 input-->
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="textinput">Address<!-- <span>*</span> --></label>
+                                                <div class="col-md-12">
+                                                    <input id="address" ng-model="myForm.address" name="address" type="text" placeholder="Address" class="form-control input-md">
+                                                </div>
+                                            </div>
+
+                                            <!-- Address line2 input-->
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="textinput">Mobile No.</label>
+                                                <div class="col-md-12">
+                                                    <input aw-limit-length="10" id="phone" ng-model="myForm.phone" name="phone" ng-minlength="10" ng-maxlength="10" type="number" placeholder="Enter 10-digit mobile no." class="form-control input-md">
+                                                    <span class="error" ng-show="farmerForm.phone.$error.minlength"> Enter a Valid Mobile Number!</span>
+                                                    <span class="error" ng-show="farmerForm.phone.$error.maxlength"> Enter a Valid Mobile Number!</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Address line2 input-->
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="textinput">Email</label>
+                                                <div class="col-md-12">
+                                                    <input type="text" placeholder="Email id" id="email" name="email" ng-model="myForm.email" class="form-control input-md" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" />
+                                                    <span class="custome-error" ng-show="farmerForm.email.$dirty&&farmerForm.email.$error.pattern">Please Enter Valid Email</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="textinput">City</label>
+                                                <div class="col-md-12">
+                                                    <select name="city" ng-minlength="1" ng-model="myForm.city" class="form-control">
+                      <option value=''>--Select city--</option>	
+                      <option value="Bangalore">Bangalore</option>
+                      <option value="Kolkata">Kolkata</option>		  
+                      <option value="Delhi">Delhi</option>
+                      <option value="Durgapur">Durgapur</option>           
+                      <option value="Gurgaon">Gurgaon</option>
+                      <option value="Bhopal">Bhopal</option>                    
+                      <option value="Varanasi">Varanasi</option>
+                      <option value="Prayagraj">Prayagraj</option>
+                    </select>
+                                                    <span class="custome-error" ng-show="(myForm.city && !myForm.city) || farmerForm.city.$error.minlength ">Please select your city</span>
+                                                </div>
+                                            </div>
+                                            <!-- Address line2 input-->
+
+
+                               <div class="form-group">
+                                 <label class="col-md-12 control-label" for="checkboxes">Select Categories *</label>
+                                <div class="col-md-12">
+                                    <input type="checkbox" name="list" value="Vegetables"> Vegetables
+
+                                    <input type="checkbox" name="list" value="Fruits"> Fruits
+                                </div>
+                            </div>
+                                            <div class="form-group" ng-repeat="item in myForm.data">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label class="col-md-12 control-label" for="textinput">Commodity Name</label>
+                                                        <div class="col-md-12">
+                                                            <select id="crop_name" ng-model="item.crop_name" name="crop_name" class="form-control" required>                                                                  
+<option value="Avarekari/ Seam">Avarekari/ Seam </option>
+<option value="Baby Bottle Gourd">Baby Bottle Gourd </option>
+<option value="Baby Corn">Baby Corn </option>
+<option value="Banana - Robusta">Banana - Robusta </option>
+<option value="Banana - Yelakki">Banana - Yelakki </option>
+<option value="Banana Flower">Banana Flower </option>
+<option value="Barbati/Jujhunda - Hybrid">Barbati/Jujhunda - Hybrid </option>
+<option value="Barbati/Jujhunda - Indian">Barbati/Jujhunda - Indian </option>
+<option value="Beetroot Local ">Beetroot Local </option>
+<option value="Beetroot Ooty ">Beetroot Ooty </option>
+<option value="Bitter Gourd /Karela ( Regular ) ">Bitter Gourd /Karela ( Regular ) </option>
+<option value="Bitter Gourd /Karela ( Forest /Round ) ">Bitter Gourd /Karela (Forest /Round ) </option>
+<option value="Bottle Gourd ">Bottle Gourd </option>
+<option value="Brinjal (Long Green)">Brinjal (Long Green) </option>
+<option value="Brinjal Bharta ">Brinjal Bharta </option>
+<option value="Brinjal Purple Small ">Brinjal Purple Small </option>
+<option value="Brinjal - Rampuri">Brinjal - Rampuri</option>
+<option value="Brocolli ">Brocolli </option>
+<option value="Cabbage New ">Cabbage New </option>
+<option value="Cabbage Ooty ">Cabbage Ooty </option>
+<option value="Capsicum ">Capsicum </option>
+<option value="Capsicum - Green Big">Capsicum - Green Big</option>
+<option value="Capsicum - Green/Regular">Capsicum - Green/Regular</option>
+<option value="Carrot Local ">Carrot Local </option>
+<option value="Carrot Ooty ">Carrot Ooty </option>
+<option value="Cauliflower - Big ">Cauliflower - Big </option>
+<option value="Cauliflower - Medium">Cauliflower - Medium </option>
+<option value="Cauliflower - Small">Cauliflower - Small </option>
+<option value="Chilli (Bhajji) ">Chilli (Bhajji) </option>
+<option value="Chow Chow ">Chow Chow </option>
+<option value="Cluster Beans ">Cluster Beans </option>
+<option value="Coconut">Coconut</option>
+<option value="Coriander /Dhaniya - Big ">Coriander /Dhaniya - Big </option>
+<option value="Coriander /Dhaniya - Indian ">Coriander /Dhaniya - Indian </option>
+<option value="Coriander /Dhaniya - Regular">Coriander /Dhaniya - Regular</option>
+<option value="Corn - Regular">Corn - Regular</option>
+<option value="Cucumber (English)">Cucumber (English)</option>
+<option value="Cucumber (Indian) ">Cucumber (Indian) </option>
+<option value="Cucumber (Sambhar)">Cucumber (Sambhar)</option>
+<option value="Cucumber (White) "> Cucumber (White) </option>
+<option value="Curry Leaf - Regular "> Curry Leaf - Regular </option>
+<option value="Drumstick "> Drumstick </option>
+<option value="Garlic - Regular">Garlic - Regular</option>
+<option value="Garlic - Grad A/ Big">Garlic - Grad A/ Big</option>
+<option value="Garlic - Grad B/ Small">Garlic - Grad B/ Small</option>
+<option value="Ginger (New)"> Ginger (New)</option>
+<option value="Ginger (Old)"> Ginger (Old) </option>
+<option value="Green Chilli ( Spicy/Small) "> Green Chilli ( Spicy/Small) </option>
+<option value="Green Chilli (Long)"> Green Chilli (Long) </option>
+<option value="Green Peas/Matar "> Green Peas/Matar </option>
+<option value="Haricot Beans "> Haricot Beans </option>
+<option value="Ivy Gourd/Kundru "> Ivy Gourd/Kundru </option>
+<option value="Kalmi Saag - Regular "> Kalmi Saag - Regular </option>
+<option value="Kankad/Kankrol "> Kankad/Kankrol </option>
+<option value="Knol khol "> Knol khol </option>
+<option value="Lady Finger/Bhindi">Lady Finger/Bhindi</option>
+<option value="Lemon - Big ">Lemon - Big </option>
+<option value="Lemon - Medum ">Lemon - Medum </option>
+<option value="Lemon - Mix ">Lemon - Mix </option>
+<option value="Local Cabbage ">Local Cabbage </option>
+<option value="Methi leaf - Regular ">Methi leaf - Regular </option>
+<option value="Mint Leaf - Regular "> Mint Leaf - Regular </option>
+<option value="Mitti Potato "> Mitti Potato </option>
+<option value="Mushroom ">Mushroom </option>
+<option value="Onion - New/Grade A">Onion - New/Grade A</option>
+<option value="Onion - New/Grade B">Onion - New/Grade B</option>
+<option value="Onion - Big ">Onion - Big </option>
+<option value="Papaya Raw ">Papaya Raw </option>
+<option value="Parval "> Parval </option>
+<option value="Pavta/Broad Seam"> Pavta/Broad Seam </option>
+<option value="Poi Saag - Regular"> Poi Saag - Regular </option>
+<option value="Potato - Old/Regular"> Potato - Old/Regular</option>
+<option value="Potato-Old/HoReCa"> Potato-Old/HoReCa</option>
+<option value="Potato - Old/Grade A"> Potato - Old/Grade A</option>
+<option value="Potato - Old/Grade B"> Potato - Old/Grade B</option>
+<option value="Potato - New"> Potato - New </option>
+<option value="Pumpkin Green"> Pumpkin Green </option>
+<option value="Pumpkin Raw"> Pumpkin Raw </option>
+<option value="Pumpkin Yellow"> Pumpkin Yellow </option>
+<option value="Radish/Muli"> Radish/Muli </option>
+<option value="Raw Banana"> Raw Banana </option>
+<option value="Red Capsicum"> Red Capsicum </option>
+<option value="Ridge Gourd/Jhani"> Ridge Gourd/Jhani </option>
+<option value="Sarru(Arabi) ">Sarru(Arabi) </option>
+<option value="Seam/Bengal"> Seam/Bengal </option>
+<option value="Snake gourd- Hybrid"> Snake gourd- Hybrid </option>
+<option value="Snake gourd- Regular"> Snake gourd- Regular </option>
+<option value="Spinach/Palak - Big "> Spinach/Palak - Big </option>
+<option value="Spinach/Palak - Regular"> Spinach/Palak - Regular</option>
+<option value="Squash / Sambar Kai">Squash / Sambar Kai</option>
+<option value="Spring Onion "> Spring Onion </option>
+<option value="Sweet Corn "> Sweet Corn </option>
+<option value="Sweet Potato"> Sweet Potato </option>
+<option value="Tomato Hybrid - Grade A">Tomato Hybrid - Grade A</option>
+<option value="Tomato Hybrid - Grade B">Tomato Hybrid - Grade B</option>
+<option value="Tomato Local - Grade A"> Tomato Local - Grade A</option>
+<option value="Tomato Local - Grade B"> Tomato Local - Grade B</option>
+<option value="Tomato Local - Regular"> Tomato Local - Regular</option>
+<option value="Tomato Hybrid - Regular"> Tomato Hybrid - Regular </option>
+<option value="White Beans"> White Beans </option>
+<option value="Yam "> Yam </option>
+<option value="Yellow Capsicum"> Yellow Capsicum</option>
+                                                                        
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!--<div class="col-md-3">
+                                                        <label class="col-md-12 control-label" for="textinput">Price</label>
+                                                        <div class="col-md-12">
+                                                            <input id="price" ng-model="item.price" name="price" onchangre="show(this)" type="text" value="0.00">
+                                                        </div>
+                                                    </div>-->
+                                                    <div class="col-md-3">
+                                                        <label class="col-md-12 control-label" for="textinput">Unit</label>
+                                                        <div class="col-md-12">
+                                                            <select id="unit" ng-model="item.unit" name="unit" required>
+                                                                        <option  disabled selected>--Select--</option>
+                                                                          <option value="kg">kg</option>
+                                                                           <option value="pc">pc</option>
+                                                                </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5">
+                                                        <label class="col-md-12 control-label" for="textinput">QTY</label>
+                                                        <div class="col-md-12">
+                                                            <input id="crop_qty" ng-model="item.crop_qty" name="crop_qty" type="text" placeholder="Enter crop quantity" class="form-control input-md">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="add-more" ng-click="addNewCrop()" href="javascript:void(0)">+ ADD MORE CROPS</a>
+
+                                        </div>
+                                        <div class="submit-btn col-md-4 col-md-offset-4">
+                                            <!-- <button class="btn btn-success" ng-click="submitTheForm()" type="button">Submit Form</button>-->
+                                            <button class="btn btn-sm btn-primary btn-block" ng-click="submitTheForm()" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                    <!-- Address line2 input-->
+
+
+                                </fieldset>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/order.js"></script>
+    <!-- <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-83361554-1', 'auto');
+        ga('send', 'pageview');
+    </script>-->
+
+</body>
+
+</html>

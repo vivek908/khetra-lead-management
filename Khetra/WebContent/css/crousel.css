@@ -1,0 +1,263 @@
+.carousel-control {
+    width: 4%;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+.news-in-air .carousel-inner .item,
+.news-in-air .carousel-inner .item.active {
+    background: #f9f9f9;
+    overflow: hidden;
+}
+
+.home .carousel-inner .active.item {
+    z-index: -9;
+}
+
+.icon-left-arrow,
+.icon-right-arrow {
+    position: absolute;
+    left: 6px;
+    top: 115px;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-left-arrow {
+    left: -18px;
+}
+
+.icon-right-arrow {
+    right: -25px;
+    left: auto;
+}
+
+.farmer .icon-left-arrow,
+.farmer .icon-right-arrow {
+    top: 90px;
+}
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+    left: 0;
+}
+
+.MultiCarousel .rightLst {
+    right: 0;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    background-size: 100%;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+    cursor: default;
+    background: transparent;
+}
+
+@media (max-width: 767px) {
+    .farmer .icon-left-arrow,
+    .farmer .icon-right-arrow {
+        top: 60px;
+    }
+    .icon-left-arrow {
+        left: -24px;
+    }
+    .icon-right-arrow {
+        right: -30px;
+    }
+    .carousel-inner .active.left {
+        left: -100%;
+    }
+    .carousel-inner .next {
+        left: 100%;
+    }
+    .carousel-inner .prev {
+        left: -100%;
+    }
+    .active>div {
+        display: none;
+    }
+    .active>div:first-child {
+        display: block;
+    }
+    .home .carousel-inner .active.item>div {
+        display: block;
+    }
+    .hdr-bg-gradient {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%);
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: auto;
+    }
+    .header-crousel .title {
+        top: auto;
+        text-align: center;
+        bottom: 45px;
+    }
+    .header-crousel .carousel h1,
+    .header-crousel .carousel p {
+        text-align: center;
+    }
+    .MultiCarousel .MultiCarousel-inner .item>div {
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .news-carousel .bg-shadow {
+        min-height: 370px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .carousel-inner .active.left {
+        left: -50%;
+    }
+    .carousel-inner .next {
+        left: 50%;
+    }
+    .carousel-inner .prev {
+        left: -50%;
+    }
+    .active>div {
+        display: none;
+    }
+    .active>div:first-child {
+        display: block;
+    }
+    .active>div:first-child+div {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-inner .active.left {
+        left: -25%;
+    }
+    .carousel-inner .next {
+        left: 25%;
+    }
+    .carousel-inner .prev {
+        left: -25%;
+    }
+}
+
+
+/********* review wrap carousel *************/
+
+#reviewCarousel .carousel-inner .active.left {
+    left: -100%;
+}
+
+#reviewCarousel .carousel-inner .next {
+    left: 100%;
+}
+
+#reviewCarousel .carousel-inner .prev {
+    left: -100%;
+}
+
+.review-wrapp {
+    float: left;
+    position: relative;
+    width: calc(100% - 235px);
+    padding: 0 25px;
+}
+
+.review-wrapp .icon-left-arrow,
+.review-wrapp .icon-right-arrow {
+    top: 50%;
+    margin-top: -10px;
+}
+
+.review-wrapp .icon-right-arrow {
+    right: -15px;
+}
+
+.tbl {
+    display: table;
+    float: none;
+    padding: 5px 25px;
+}
+
+.tbl .tbl-cell {
+    vertical-align: middle;
+    display: table-cell;
+    float: none;
+    height: 170px;
+}
+
+@media (max-width: 767px) {
+    .review-wrapp {
+        width: 100%;
+        padding: 0 25px;
+    }
+    .col-xs-12.tbl {
+        padding: 20px 0;
+    }
+    .tbl {
+        display: block;
+        float: left;
+        padding: 5px 25px;
+        width: 100%;
+    }
+    .tbl .tbl-cell {
+        display: block;
+        float: left;
+        width: auto;
+        height: auto;
+    }
+    .tbl .tbl-cell.member-img {
+        width: 84px;
+        float: left;
+    }
+    .tbl .tbl-cell.member-info {
+        min-width: auto;
+    }
+    .message.tbl-cell {
+        font-size: 16px;
+    }
+    .review-wrapp .icon-left-arrow {
+        left: -18px;
+    }
+    .review-wrapp .icon-right-arrow {
+        right: -23px;
+    }
+}

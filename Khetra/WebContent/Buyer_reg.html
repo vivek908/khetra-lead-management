@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buyer Registration Form</title>
+    <link rel = "icon" href ="https://files.slack.com/files-pri/TGL9P0K6C-FNGGBMMG9/khetra_logo.jpg" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/Buyer_reg.css" />
+    <link rel = "icon" href ="images/khetra_logo.jpg" type = "image/x-icon">
+</head>
+
+<body>
+
+    <h1 id="title">Buyer Registration</h1>
+    <div id="form-outer">
+        <p id="description">
+            Welcome to Buyer Registration form
+        </p>
+        <form id="buyer-form" method="post" action="servlet/buyer_reg">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="lic_no">* Business License Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="lic_no" id="name" class="input-field" placeholder="Enter your Business license number" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="u_name">* User Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="u_name" id="name" class="input-field" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="mobile-label" for="mobile">* Mobile Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="tel" name="mobile" id="number" class="input-field" placeholder="Enter Mobile Number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="shop_name">* Shop Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="shop_name" id="name" class="input-field" placeholder="Enter your shop name">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="shop_address">* Shop Address: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="shop_address" id="name" class="input-field" placeholder="Enter your shop address">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="pin">* Pin Code: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="pin" id="name" class="input-field" placeholder="Enter your area pin code number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="shop_area">* Shop Area(In Sq. ft): </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="shop_area" id="name" class="input-field" placeholder="Enter your shop Area">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="image">* Attach Shop Image: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="image" class="dropdown">
+                        <option disabled value="Select">Choose</option>
+                        <option value="Upload">Upload</option>
+                        <option value="Snapshot">Take a Snapshot</option>
+                        <option value="drive">Google Drive</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="pan">* PAN Card Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="pan" id="name" class="input-field" placeholder="Enter your area PAN Card number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Aadhar Card Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="aadhar" id="name" class="input-field" placeholder="Enter your Aadhar card number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="bank_acc">* Bank Account Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="bank_acc" id="name" class="input-field" placeholder="Enter your Bank Account number">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="ifsc">* IFSC Code: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="ifsc" id="name" class="input-field" placeholder="Enter IFSC Code">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="license-label" for="gst">* GST Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="gst" id="name" class="input-field" placeholder="Enter GST number">
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body >
+
+</html>

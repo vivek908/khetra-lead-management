@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supplier Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/Supplier_reg.css" />
+    <link rel = "icon" href ="images/khetra_logo.jpg" type = "image/x-icon">
+</head>
+
+<body>
+    <h1 id="title">Supplier Registration</h1>
+    <div id="form-outer">
+        <p id="description">
+            All Mandatory fields are marked with an asterisk (*)
+        </p>
+        <form id="supplier-form" method="post" action="servlet/supplier_reg">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required title="Please Enter Valid Name">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="address">* Address: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="address" id="name" class="input-field" placeholder="Enter your address" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="date">* Commodity List: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Item Name.." title="Type in a name" >
+
+                    <ul id="myUL">
+<li><a><input type="checkbox" name="list" value="Avarekari/ Seam">Avarekari/ Seam</a> </li>    
+<li><a><input type="checkbox" name="list" value="Baby Bottle Gourd">Baby Bottle Gourd</a></li>      
+<li><a><input type="checkbox" name="list" value="Baby Corn">Baby Corn </a> </li> 
+<li><a><input type="checkbox" name="list" value="Banana - Robusta "> Banana - Robusta </a> </li>   
+<li><a><input type="checkbox" name="list" value="Banana - Yelakki ">Banana - Yelakki </a> </li>     
+<li><a><input type="checkbox" name="list" value="Banana Flower"> Banana Flower </a>  </li>  
+<li><a><input type="checkbox" name="list" value="Barbati/Jujhunda - Hybrid">Barbati/Jujhunda - Hybrid </a>   </li>   
+<li><a><input type="checkbox" name="list" value="Barbati/Jujhunda - Indian"> Barbati/Jujhunda - Indian  </a>  </li>  
+<li><a><input type="checkbox" name="list" value="Beetroot Local"> Beetroot Local</a>  </li>   
+<li><a><input type="checkbox" name="list" value="Beetroot Ooty"> Beetroot Ooty </a>   </li>  
+<li><a><input type="checkbox" name="list" value="Bitter Gourd /Karela ( Regular )">Bitter Gourd /Karela ( Regular ) </a> </li>      
+<li><a><input type="checkbox" name="list" value="Bitter Gourd /Karela ( Round )">Bitter Gourd /Karela ( Round ) </a> </li>    
+<li><a><input type="checkbox" name="list" value="Bottle Gourd">Bottle Gourd  </a>  </li>    
+<li><a><input type="checkbox" name="list" value="Brinjal (Long Green)">Brinjal (Long Green) </a> </li>      
+<li><a><input type="checkbox" name="list" value="Brinjal Bharta">Brinjal Bharta </a> </li>    
+<li><a><input type="checkbox" name="list" value="Brinjal Purple Small">Brinjal Purple Small </a> </li>      
+<li><a><input type="checkbox" name="list" value="Brocolli">Brocolli </a> </li>      
+<li><a><input type="checkbox" name="list" value="Cabbage New">Cabbage New </a> </li>   
+<li><a><input type="checkbox" name="list" value="Cabbage Ooty">Cabbage Ooty </a> </li>    
+<li><a><input type="checkbox" name="list" value="Capsicum"> Capsicum  </a> </li>    
+<li><a><input type="checkbox" name="list" value="Capsicum - Green Big">Capsicum - Green Big </a> </li>      
+<li><a><input type="checkbox" name="list" value="Carrot Local">Carrot Local </a></li>       
+<li><a><input type="checkbox" name="list" value="Carrot Ooty">Carrot Ooty </a> </li>   
+<li><a><input type="checkbox" name="list" value="Cauliflower - Big">Cauliflower - Big   </a> </li>   
+<li><a><input type="checkbox" name="list" value="Cauliflower - Medium">Cauliflower - Medium </a></li>       
+<li><a><input type="checkbox" name="list" value="Cauliflower - Small"> Cauliflower - Small </a> </li>  
+<li><a><input type="checkbox" name="list" value="Chilli (Bhajji)">Chilli (Bhajji)</a></li>     
+<li><a><input type="checkbox" name="list" value="Chow Chow">  Chow Chow </a> </li>   
+<li><a><input type="checkbox" name="list" value="Cluster Beans"> Cluster Beans </a> </li>    
+<li><a><input type="checkbox" name="list" value="Coconut"> Coconut </a> </li>  
+<li><a><input type="checkbox" name="list" value="Coriander /Dhaniya - Big">Coriander /Dhaniya - Big </a> </li>       
+<li><a><input type="checkbox" name="list" value="Coriander /Dhaniya - Indian"> Coriander /Dhaniya - Indian </a> </li>  
+<li><a><input type="checkbox" name="list" value="Coriander /Dhaniya - Regular">Coriander /Dhaniya - Regular </a> </li>      
+<li><a><input type="checkbox" name="list" value="Corn - Regular"> Corn - Regular </a> </li>   
+<li><a><input type="checkbox" name="list" value="Cucumber (English)">Cucumber (English) </a> </li>    
+<li><a><input type="checkbox" name="list" value="Cucumber (Indian)"> Cucumber (Indian) </a> </li>    
+<li><a><input type="checkbox" name="list" value="Cucumber (Sambhar)"> Cucumber (Sambhar)</a> </li>    
+<li><a><input type="checkbox" name="list" value="Cucumber (White)">Cucumber (White)</a>  </li>      
+<li><a><input type="checkbox" name="list" value="Curry Leaf - Regular"> Curry Leaf - Regular</a>  </li>     
+<li><a><input type="checkbox" name="list" value="Drumstick"> Drumstick </a>  </li>   
+<li><a><input type="checkbox" name="list" value="Garlic"> Garlic </a>   </li> 
+<li><a><input type="checkbox" name="list" value="Ginger (New)"> Ginger (New)</a>  </li>     
+<li><a><input type="checkbox" name="list" value="Ginger (Old)">Ginger (Old) </a>  </li>     
+<li><a><input type="checkbox" name="list" value="Green Chilli ( Small)"> Green Chilli ( Small)</a>  </li>    
+<li><a><input type="checkbox" name="list" value="Green Chilli (Long)">Green Chilli (Long) </a> </li>   
+<li><a><input type="checkbox" name="list" value="Green Peas/Matar"> Green Peas/Matar </a></li>      
+<li><a><input type="checkbox" name="list" value="Haricot Beans">Haricot Beans </a></li>      
+<li><a><input type="checkbox" name="list" value="Ivy Gourd/Kundru">Ivy Gourd/Kundru </a> </li>      
+<li><a><input type="checkbox" name="list" value="Kalmi Saag - Regular">Kalmi Saag - Regular  </a> </li>      
+<li><a><input type="checkbox" name="list" value="Kankad/Kankrol"> Kankad/Kankrol </a> </li>   
+<li><a><input type="checkbox" name="list" value="Knol khol">Knol khol </a>      </li>
+<li><a><input type="checkbox" name="list" value="Lady Finger/Bhindi">Lady Finger/Bhindi</a> </li>     
+<li><a><input type="checkbox" name="list" value="Lemon - Big"> Lemon - Big </a>  </li> 
+<li><a><input type="checkbox" name="list" value="Lemon - Medum ">Lemon - Medum </a> </li>     
+<li><a><input type="checkbox" name="list" value="Lemon - Mix  "> Lemon - Mix  </a> </li>
+<li><a><input type="checkbox" name="list" value="Local Cabbage ">Local Cabbage  </a>   </li>  
+<li><a><input type="checkbox" name="list" value="Methi leaf - Regular"> Methi leaf - Regular </a></li>     
+<li><a><input type="checkbox" name="list" value="Mint Leaf - Regular "> Mint Leaf - Regular </a> </li> 
+<li><a><input type="checkbox" name="list" value="Mitti Potato"> Mitti Potato </a> </li>     
+<li><a><input type="checkbox" name="list" value="Mushroom">Mushroom  </a> </li>  
+<li><a><input type="checkbox" name="list" value="Onion - Bengal/Red"> Onion - Bengal/Red   </a> </li> 
+<li><a><input type="checkbox" name="list" value="Onion - Big ">Onion - Big  </a> </li> 
+<li><a><input type="checkbox" name="list" value="Onion - Medium">Onion - Medium </a> </li>    
+<li><a><input type="checkbox" name="list" value="Onion - Regular">Onion - Regular </a> </li>   
+<li><a><input type="checkbox" name="list" value="Papaya Raw"> Papaya Raw </a> </li>   
+<li><a><input type="checkbox" name="list" value="Parval"> Parval  </a>  </li>
+<li><a><input type="checkbox" name="list" value="Pavta/Broad Seam">Pavta/Broad Seam   </a> </li>    
+<li><a><input type="checkbox" name="list" value="Poi Saag - Regular">Poi Saag - Regular </a> </li>    
+<li><a><input type="checkbox" name="list" value="Potato "> Potato  </a>  </li>
+<li><a><input type="checkbox" name="list" value="Potato - New">Potato - New </a>  </li>     
+<li><a><input type="checkbox" name="list" value="Pumpkin Green">Pumpkin Green</a> </li>      
+<li><a><input type="checkbox" name="list" value="Pumpkin Raw">Pumpkin Raw </a>    </li>
+<li><a><input type="checkbox" name="list" value="Pumpkin Yellow">Pumpkin Yellow </a> </li>    
+<li><a><input type="checkbox" name="list" value="Radish/Muli">Radish/Muli </a>  </li>  
+<li><a><input type="checkbox" name="list" value="Raw Banana">Raw Banana </a>  </li>   
+<li><a><input type="checkbox" name="list" value="Red Capsicum"> Red Capsicum </a>  </li>    
+<li><a><input type="checkbox" name="list" value="Ridge Gourd/Jhani"> Ridge Gourd/Jhani  </a> </li>   
+<li><a><input type="checkbox" name="list" value="Sarru(Arabi)">Sarru(Arabi) </a>  </li>     
+<li><a><input type="checkbox" name="list" value="Seam/Bengal">Seam/Bengal  </a> </li>  
+<li><a><input type="checkbox" name="list" value="Snake gourd- Hybrid"> Snake gourd- Hybrid  </a>  </li>
+<li><a><input type="checkbox" name="list" value="Snake gourd- Regular">Snake gourd- Regular</a> </li>       
+<li><a><input type="checkbox" name="list" value="Spinach/Palak - Big">Spinach/Palak - Big  </a>  </li>
+<li><a><input type="checkbox" name="list" value="Spinach/Palak - Regular">Spinach/Palak - Regular </a> </li>   
+<li><a><input type="checkbox" name="list" value="Spring Onion"> Spring Onion </a> </li>     
+<li><a><input type="checkbox" name="list" value="Sweet Corn"> Sweet Corn </a>  </li>  
+<li><a><input type="checkbox" name="list" value="Sweet Potato"> Sweet Potato </a>  </li>   
+<li><a><input type="checkbox" name="list" value="Tomato Hybrid"> Tomato Hybrid </a></li>     
+<li><a><input type="checkbox" name="list" value="Tomato Local"> Tomato Local</a> </li>       
+<li><a><input type="checkbox" name="list" value="White Beans">White Beans </a>   </li> 
+<li><a><input type="checkbox" name="list" value="Yam"> Yam </a>   </li>
+<li><a><input type="checkbox" name="list" value="Yellow Capsicum">Yellow Capsicum</a>  </li>                      
+                    </ul>
+                    <script>
+                        function myFunction() {
+                            var input, filter, ul, li, a, i, txtValue;
+                            input = document.getElementById("myInput");
+                            filter = input.value.toUpperCase();
+                            ul = document.getElementById("myUL");
+                            li = ul.getElementsByTagName("li");
+                            for (i = 0; i < li.length; i++) {
+                                a = li[i].getElementsByTagName("a")[0];
+                                txtValue = a.textContent || a.innerText;
+                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                    li[i].style.display = "";
+                                } else {
+                                    li[i].style.display = "none";
+                                }
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="city">* City: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="city" class="dropdown" required>
+                        <option disabled value="select" selected>Choose</option>
+                        <option value="bengaluru">bengaluru</option>
+                        <option value="Durgapur">Durgapur</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="state">* State: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="state" class="dropdown" required>
+                        <option disabled value="select" selected>Choose</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="other state">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="zip">* Pin Code: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="zip" id="name" class="input-field" pattern="[0-9]{6}" placeholder="Enter your area pin code number" title="Please Enter a valid Pin Code" required />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="mobile">* Mobile Number: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="mobile" id="number" class="input-field" pattern="[6789][0-9]{9}" placeholder="Enter Mobile Number" title="Please Enter a valid Mobile Number" required />
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

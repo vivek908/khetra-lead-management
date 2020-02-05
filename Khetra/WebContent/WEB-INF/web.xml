@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Khetra</display-name>
+  
+  <servlet>
+    <servlet-name>LMS_REG</servlet-name>
+    <servlet-class>LMS</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LMS_REG</servlet-name>
+    <url-pattern>/servlet/LMS</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>lms.html</welcome-file>
+  </welcome-file-list>
+ 
+  <servlet>  
+<servlet-name>Buyer_REG</servlet-name>  
+<servlet-class>Buyer_reg</servlet-class>  
+</servlet>   
+<servlet-mapping>  
+<servlet-name>Buyer_REG</servlet-name>  
+<url-pattern>/servlet/buyer_reg</url-pattern>  
+</servlet-mapping>  
+<welcome-file-list>  
+    <welcome-file>Buyer_reg.html</welcome-file>  
+</welcome-file-list>
+  <servlet>
+    <servlet-name>Supplier_REG</servlet-name>
+    <servlet-class>Supplier_reg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Supplier_REG</servlet-name>
+    <url-pattern>/servlet/supplier_reg</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>supplier_reg.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Logistic_REG</servlet-name>
+    <servlet-class>Logistics_reg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logistic_REG</servlet-name>
+    <url-pattern>/servlet/logistics</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>Logistics_reg.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Demand_reg</servlet-name>
+    <servlet-class>demand_registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Demand_reg</servlet-name>
+    <url-pattern>/servlet/demand_reg</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>demand_registration.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>order_placement</servlet-name>
+    <servlet-class>order_placement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>order_placement</servlet-name>
+    <url-pattern>/order_placement</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>order_management.html</welcome-file>
+  </welcome-file-list>
+  
+</web-app>

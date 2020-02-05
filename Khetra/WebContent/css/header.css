@@ -1,0 +1,511 @@
+*:focus {
+    outline: 0;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    text-align: center;
+}
+
+.navbar {
+    transition: 0.5s;
+}
+
+.navbar-right {
+    padding-top: 10px;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.active {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover span,
+.navbar-default .navbar-nav>li>a.active span {
+    background-color: #ffc107;
+}
+
+.navbar-default .navbar-nav>li>a:hover .hdr-txt,
+.navbar-default .navbar-nav>li>a.active .hdr-txt {
+    border-bottom: 2px solid #ffc107;
+}
+
+.navbar-nav>li>a {
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #212121;
+    font-size: 13.5px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.hdr-icon {
+    float: left;
+    width: 100%;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.navbar-default .navbar-nav>li>a span {
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    border-radius: 50%;
+    padding-top: 5px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.shrink-nav .navbar-nav>li>a .icon {
+    transition: 0.5s;
+    opacity: 1;
+    display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a div {
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-brand {
+    padding: 10px 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.navbar-brand img {
+    width: 105px;
+}
+
+.icon-logo {
+    margin-bottom: 5px;
+    min-height: 25px;
+}
+
+.social-icon-round {
+    border-radius: 50%;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #eee;
+    float: left;
+    padding: 2px;
+    margin: 10px 5px 5px;
+    transition: 0.5s;
+}
+
+@media (min-width: 1024px) {
+    .header-crousel.aboutus-crousel .carousel h1 {
+        text-align: left;
+    }
+    .shrink-nav {
+        color: #000 !important;
+        top: 0px;
+        background-color: #fff;
+        position: fixed;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 0 4px 0 rgba(0, 0, 0, 0.3);
+        height: 56px;
+        max-height: 50px;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        0;
+        transition: 0.5s;
+    }
+    .shrink-nav.navbar {
+        min-height: 56px;
+        transition: 0.5s;
+    }
+    .shrink-nav .navbar-nav>li>a {
+        color: #000 !important;
+        line-height: 24px;
+    }
+    .shrink-nav .navbar-nav>li>a span {
+        opacity: 0;
+        transition: 0.5s;
+        margin-bottom: -56px;
+        margin-top: -56px;
+    }
+    .shrink-nav .hdr-icon {
+        transition: 0.5s;
+        opacity: 0;
+        margin-bottom: -56px;
+    }
+    .shrink-nav .navbar-nav>li>a {
+        line-height: 48px;
+    }
+    .shrink-nav .foloow-us-txt {
+        height: 0;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .shrink-nav .social-icon-round {
+        margin: 0 5px;
+        transition: 0.5s;
+    }
+}
+
+.follow-us {
+    float: right;
+    padding-top: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.hd-follow-us {
+    font-size: 14px;
+}
+
+.social {
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-color: #ccc;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+
+/***********************************************************
+			C A R O U S E L    S T Y L I N G
+************************************************************/
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-fade .carousel-inner>.item.next,
+    .carousel-fade .carousel-inner>.item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner>.item.prev,
+    .carousel-fade .carousel-inner>.item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner>.item.next.left,
+    .carousel-fade .carousel-inner>.item.prev.right,
+    .carousel-fade .carousel-inner>.item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.header-crousel .item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header-crousel .item:nth-child(1) {
+    background: url(../images/home_1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.header-crousel .item:nth-child(2) {
+    background: url(../images/home_2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.header-crousel .item:nth-child(3) {
+    background: url(../images/fnv-retailer-shop.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.header-crousel .item:nth-child(4) {
+    background: url(../images/home_4.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/************************ about us crousel images **************/
+
+.aboutus .header-crousel .item:nth-child(1) {
+    background: url(../images/about_us_1.jpg) no-repeat left top;
+    background-size: cover;
+}
+
+.aboutus .header-crousel .item:nth-child(2) {
+    background: url(../images/about_us_2.jpg) no-repeat right center;
+    background-size: cover;
+}
+
+.aboutus .header-crousel .item:nth-child(3) {
+    background: url(../images/about_us_3.jpg) no-repeat right center;
+    background-size: cover;
+}
+
+
+/************************ farmer crousel images **************/
+
+.farmer .header-crousel .item:nth-child(1) {
+    background: url(../images/farmer_3.jpg) no-repeat right center;
+    background-size: cover;
+}
+
+.farmer .header-crousel .item:nth-child(2) {
+    background: url(../images/farmer_2.jpg) no-repeat right center;
+    background-size: cover;
+}
+
+.farmer .header-crousel .item:nth-child(3) {
+    background: url(../images/farmer_3.jpg) no-repeat right center;
+    background-size: cover;
+}
+
+
+/************************ farmer crousel images **************/
+
+.retailer .header-crousel .item:nth-child(1) {
+    background: url(../images/retailer_1.jpg) no-repeat right center;
+    background-size: cover;
+}
+
+.retailer .header-crousel .item:nth-child(2) {
+    background: url(../images/retailer_2.jpg) no-repeat right center;
+    background-size: contain;
+}
+
+.retailer .header-crousel .item:nth-child(3) {
+    background: url(../images/retailer_3.jpg) no-repeat right center;
+    background-size: contain;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .aboutus .header-crousel .item:nth-child(1) {
+        background: url(../images/about_us_1.jpg) no-repeat right -50px;
+        background-size: auto 540px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .aboutus .header-crousel .item:nth-child(1) {
+        background: url(../images/about_us_1.jpg) no-repeat right -50px;
+        background-size: auto 720px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .aboutus .header-crousel .item:nth-child(1) {
+        background: url(../images/about_us_1.jpg) no-repeat right -50px;
+        background-size: auto 800px;
+    }
+}
+
+.header-crousel.row-crousel {
+    top: -100px;
+    height: 100%;
+}
+
+.header-crousel .carousel {
+    /*z-index: -99;*/
+    height: 100%;
+    /*top: -100px;*/
+    padding: 0;
+}
+
+.header-crousel .carousel h1 {
+    letter-spacing: 1.5px;
+    text-align: right;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.farmer .header-crousel .carousel p,
+.farmer .header-crousel .carousel h1 {
+    text-align: left;
+}
+
+.farmer .header-crousel .carousel p {
+    font-size: 24px;
+}
+
+.header-crousel .carousel p {
+    font-family: 'Titillium-Regular';
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-crousel .carousel .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header-crousel .title {
+    margin-top: 20px;
+    padding: 10px;
+    text-shadow: 2px 2px #000;
+    color: #FFF;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 35%;
+    text-align: right;
+    max-width: 450px;
+}
+
+.farmer .header-crousel .carousel .item,
+.aboutus .header-crousel .carousel .item {
+    top: 0;
+}
+
+.farmer .header-crousel .carousel-inner .title,
+.aboutus .header-crousel .carousel-inner .title {
+    background-color: #1a3530;
+    color: #fff;
+    width: 400px;
+    left: 0;
+    right: auto;
+    top: 0;
+    height: 100%;
+    margin: 0;
+    padding: 5px 25px;
+}
+
+.farmer .header-crousel .carousel-inner .title {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media (max-width: 1024px) {
+    .navbar-default .navbar-toggle {
+        border-color: #33768b;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #33768b;
+    }
+    .nav>li {
+        float: left;
+        width: 100%;
+        padding: 5px 0;
+        border-top: 1px solid #eee;
+    }
+    .icon-farmer {
+        background-position: -27px 0px;
+    }
+    .icon-retailer {
+        background-position: -55px 2px;
+    }
+    .icon-apps {
+        background-position: -108px 0;
+    }
+    .icon-aboutus {
+        background-position: -135px 0;
+    }
+    .navbar-default .navbar-nav>li>a {
+        text-align: left;
+        line-height: 30px;
+    }
+    .navbar-default .navbar-nav>li>a:hover span,
+    .navbar-default .navbar-nav>li>a.active span {
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>li>a:hover div,
+    .navbar-default .navbar-nav>li>a.active div {
+        border-bottom: 0;
+        display: inline-block;
+    }
+    .hdr-icon {
+        width: auto;
+    }
+    .navbar-default .navbar-nav>li>a span {
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        float: left;
+        padding: 0;
+        margin-right: 10px;
+    }
+    .icon-home,
+    .icon-farmer,
+    .icon-retailer,
+    .icon-article,
+    .icon-apps,
+    .icon-aboutus {
+        width: 30px;
+        height: 30px;
+        background-size: 550%;
+    }
+    .header-crousel.row-crousel {
+        top: 0;
+        padding-top: 50px;
+    }
+    .farmer .header-crousel .carousel-inner .title {
+        padding-top: 100px;
+    }
+    .farmer .header-crousel .carousel-inner .title,
+    .aboutus .header-crousel .carousel-inner .title,
+    .header-crousel .title {
+        width: 100%;
+        right: 15px;
+    }
+}
+
+
+/************ ipad fixes ***********/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .foloow-us-txt {
+        display: none;
+    }
+    .nav>li {
+        width: auto;
+        padding: 10px 0;
+    }
+    .social-icon-round {
+        margin-top: 2px;
+    }
+    .navbar-default .navbar-nav>li>a.active div.hdr-icon,
+    .navbar-default .navbar-nav>li>a:hover div.hdr-icon,
+    .hdr-icon {
+        display: none;
+    }
+    .aboutus .header-crousel .carousel-inner .title {
+        max-width: 100%;
+        bottom: 0;
+        top: 250px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .aboutus .header-crousel .carousel h1 {
+        font-size: 24px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supplier_Details</title>
+    <link rel="StyleSheet" type="text/css" href=css/Self_Service_Supplier.css>
+    <link rel = "icon" href ="images/khetra_logo.jpg" type = "image/x-icon">
+</head>
+
+<body>
+    <h1 id="title">Self Service Supplier</h1>
+    <div id="form-outer">
+        <form action="" method="post">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="mycrop-label" for="mycrop">* My Crop : </label>
+                </div>
+                <div class="rightTab">
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Vegetables</label></li>
+                        <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Fruits</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="vegetables_Quantity" for="vegetables_Quantity">* Vegetables Quantity : </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="currentPos" class="dropdown">
+        <option value=''>Select an option</option>
+        <option value="Qunatity">50 KG</option>
+        <option value="Qunatity">100 KG</option>
+        <option value="Qunatity">150 KG</option>
+        <option value="Qunatity">200 KG</option>
+      </select>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="fruits_Quantity" for="fruits_Quantity">* Fruits Quantity : </label>
+                    </div>
+                    <div class="rightTab">
+                        <select id="dropdown" name="currentPos" class="dropdown">
+        <option value="choose">Select an option</option>
+        <option value="Qunatity">50 KG</option>
+        <option value="Qunatity">100 KG</option>
+        <option value="Qunatity">150 KG</option>
+        <option value="Qunatity">200 KG</option>
+      </select>
+                    </div>
+                    <div class="rowTab">
+                        <div class="labels">
+                            <label for="Family">Family :</label>
+                        </div>
+                        <div class="rightTab">
+                            <select id="dropdown" name="currentPos" class="dropdown">
+      <option value>Select an option</option>
+      <option value="Father">Father</option>
+      <option value="Mother">Mother</option>
+      <option value="Uncle">Uncle</option>
+      <option value="Brother">Brother</option>
+      <option value="other">Other</option>
+    </select>
+                        </div>
+                    </div>
+                    <div class="rowTab">
+                        <div class="labels">
+                            <label for="dateofdelivery"> Date of Delivery : </label>
+                        </div>
+                        <div class="rightTab">
+                            <input type="datetime-local" name="date_of_delivery">
+                        </div>
+                    </div>
+
+                    <button id="submit" type="submit" value="SupplierSelfService">Submit</button>
+        </form>
+        </div>
+</body>
+
+</html>

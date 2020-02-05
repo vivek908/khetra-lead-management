@@ -1,0 +1,1351 @@
+body,
+html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Titillium-Regular';
+    font-size: 18px;
+    letter-spacing: .5px;
+    background-color: #f9f9f9;
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Light';
+    src: url('fonts/RobotoSlab-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Regular';
+    src: url('fonts/RobotoSlab-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Titillium-Regular';
+    src: url('fonts/Titillium-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Titillium-Semibold';
+    src: url('fonts/Titillium-Semibold.ttf');
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'RobotoSlab-Regular';
+}
+
+h2 {
+    font-size: 34px;
+    font-family: 'RobotoSlab-Regular';
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'RobotoSlab-Regular';
+}
+
+.mr-t-25 {
+    margin-top: 25px;
+}
+
+.pd-t-6p {
+    padding-top: 6%;
+}
+
+.fullwidth {
+    float: left;
+    width: 100%;
+}
+
+.custome-dropdown .btn {
+    text-align: left;
+    text-align: left;
+    text-transform: none;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: #fff;
+    border-radius: 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.custome-dropdown .caret {
+    float: right;
+    margin-top: 10px;
+    margin-right: -13px;
+}
+
+.custome-dropdown .open>.dropdown-menu {
+    width: 100%;
+}
+
+.popup-hdr {
+    background-color: #33768b;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn-yellow {
+    font-family: 'Titillium-Semibold';
+    border-radius: 3px;
+    background-color: #33768b;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.3), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    padding: 6px 25px;
+}
+
+.btn-yellow.btn-sm {
+    font-size: 18px;
+}
+
+.grey-btn {
+    background-color: #545454;
+}
+
+.grey-btn:hover {
+    background-color: #212121;
+    color: #fff;
+}
+
+.bdr {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+}
+
+.sub-hdr {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 13.9px;
+    color: #33768b;
+}
+
+.mh100 {
+    min-height: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.container.h100 {
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-small {
+    font-size: 14px;
+}
+
+.btn.btn-primary.close-tab {
+    border-radius: 3px;
+    border: solid 2px #33768b;
+    background-color: #fff;
+    color: #33768b;
+}
+
+.hdr-bg-gradient {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/*************************************** 
+			 O U R    F E A T U R E S 
+	****************************************/
+
+.our-features {
+    padding: 30px;
+}
+
+.features {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.farm-retail-wrapp {
+    width: 100%;
+    float: left;
+}
+
+.home-farm-detail,
+.home-retailer-detail {
+    width: 50%;
+    padding: 30px;
+    background-size: 100%;
+    float: left;
+    min-height: 329px;
+}
+
+.home-farm-detail {
+    background: #fff url(../images/farmer-bg.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.home-retailer-detail {
+    background: url(../images/fnv-retailer-shop.jpg) 0 0;
+    background-size: cover;
+    color: #fff;
+}
+
+.home-retailer-detail h2,
+.home-farm-detail h2 {
+    max-width: 385px;
+    margin: 0 0 40px 0;
+    letter-spacing: 1.1px;
+}
+
+.home-retailer-detail h2 {
+    text-shadow: 4px 3px 4px #000;
+}
+
+
+/******************************************************** 
+			 C U S T O M E R    S A T I S F A C T I O N 
+	*********************************************************/
+
+
+/*.customer-satisfaction{
+	background: url(../images/customer-image.jpg) 0 0 no-repeat; 
+	background-size: 100%; 
+	min-height: 400px; 
+	width: 100%;
+	padding: 15px 25px;
+}*/
+
+.customer-satisfaction {
+    background: url(../images/customer-image.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.customer-satisfaction .content h2 {
+    margin-bottom: 40px;
+}
+
+.customer-satisfaction .content {
+    max-width: 280px;
+    line-height: 1.25;
+    letter-spacing: 0.8px;
+    padding-top: 30px;
+}
+
+
+/******************************************************** 
+					O U R    P A R T N E R S 
+	*********************************************************/
+
+.our-partners {
+    float: left;
+    width: 100%;
+    padding: 25px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.partner-img-wrap {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    padding: 55px 5px;
+    margin: 15px 0;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.our-partners img {
+    max-width: 100%;
+    max-height: 50px;
+}
+
+.our-partners .col-md-2 {
+    text-align: center;
+}
+
+
+/******************************************************** 
+			      O F F I C E   L O C A T I O N 
+	*********************************************************/
+
+.location-wrapp {
+    background: url(../images/location-bg.jpg) 0 0;
+    min-height: 200px;
+    padding: 15px 0;
+    width: 100%;
+    float: left;
+}
+
+.office-location {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.view-on-map {
+    border-radius: 2px;
+    border: solid 1px #212121;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #1d2249;
+}
+
+.view-on-map:hover {
+    background-color: #fff;
+    border: 1px solid #33768b;
+    text-decoration: none;
+    color: #272727;
+}
+
+.news-in-air {
+    float: left;
+    width: 100%;
+    padding: 30px;
+}
+
+.news-carousel a {
+    height: 240px;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.news-carousel .img-responsive {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: inherit;
+}
+
+.news-carousel .news-content {
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+    min-height: 60px;
+}
+
+.news-carousel .img-detail {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 10px 10px;
+    float: left;
+    width: 100%;
+}
+
+.news-carousel .icon-news {
+    float: left;
+    width: 50%;
+    min-height: 34px;
+}
+
+.news-carousel .icon-news img {
+    max-width: 100%;
+    max-height: 34px;
+}
+
+.news-carousel .news-date {
+    float: right;
+    text-align: right;
+}
+
+.news-carousel .bg-shadow {
+    float: left;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+}
+
+.news-carousel .bg-shadow>a>img {
+    max-height: 100%;
+}
+
+
+/*.news-carousel .col-md-3,
+.news-carousel .col-sm-6,
+.news-carousel .col-xs-12{padding-left: 0;}*/
+
+
+/****************************************************************
+				A B O U T    U S    S T Y L I N G
+****************************************************************/
+
+.aboutus section {
+    background-color: #fff;
+}
+
+.about-us-summery {
+    padding: 0 30px;
+}
+
+.about-us-summery .content {
+    font-size: 24px;
+    padding: 30px 0;
+}
+
+.farmer .row-crousel,
+.aboutus .row-crousel {
+    height: 494px;
+    padding-top: 94px;
+}
+
+.aboutus .title {
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.aboutus .carousel p {
+    text-align: left;
+    font-size: 24px;
+}
+
+.floating-top-btn {
+    background: url(../images/ic-floating-button.svg) 0 0 repeat-x;
+    background-size: 100%;
+    width: 57px;
+    height: 57px;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 2;
+}
+
+.about-us-summery .content {
+    float: left;
+    width: calc(100% - 550px);
+}
+
+.about-us-summery .content p {
+    margin-bottom: 30px
+}
+
+.content-img {
+    float: right;
+    color: #212121;
+    text-align: center;
+    width: 500px;
+    min-height: 400px;
+    margin-top: 30px;
+}
+
+.content-img img {
+    width: 100%;
+}
+
+.content-img p {
+    padding: 10px;
+}
+
+.aboutus section.meet-crofarmers {
+    padding: 30px;
+    float: left;
+    width: 100%;
+    background-color: #eee;
+}
+
+.our-professionals {
+    float: left;
+    width: 100%;
+    padding: 30px;
+}
+
+.professional-img {
+    float: left;
+    width: 20%;
+}
+
+.certificate-wrap {
+    background-color: #fff;
+    display: table;
+    padding: 15px;
+}
+
+.certificate {
+    width: 20%;
+    display: table-cell;
+    text-align: center;
+    padding: 15px 30px;
+    vertical-align: middle;
+}
+
+.certificate .img-wrap {
+    min-height: 130px;
+    float: left;
+    width: 100%;
+}
+
+.certificate img {
+    max-width: 100%;
+}
+
+.meet-crofarmers h2 {
+    font-family: 'RobotoSlab-Light';
+    letter-spacing: 0.7px;
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+.meet-crofarmers ul li {
+    width: 25%;
+    position: relative;
+    padding: 0 15px 0 0;
+}
+
+.meet-crofarmers ul li img {
+    width: 100%;
+}
+
+
+/*.meet-crofarmers ul li img.investors-logo{
+    width: 57%;
+}*/
+
+.detail {
+    position: relative;
+    z-index: 2;
+}
+
+.meet-crofarmers .social-icon {
+    float: left;
+}
+
+.team-tab-initial {
+    background-color: #fff;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.active .team-tab-initial {
+    padding-bottom: 30px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+.nav-tabs>li.active>a.hide-detail,
+.nav-tabs>li.active>a.hide-detail:hover,
+.nav-tabs>li.active>a.hide-detail:focus {
+    color: #33768b;
+    border: 1px solid #33768b;
+    padding: 6px 10px;
+    background-color: #fff;
+}
+
+.nav-tabs>li>a.hide-detail,
+.nav-tabs>li>a.show-detail,
+.show-detail,
+.hide-detail {
+    position: absolute;
+    width: 115px;
+    height: 36px;
+    right: 25px;
+    bottom: 12px;
+    color: #33768b;
+    border: 1px solid #33768b;
+    padding: 6px 10px;
+    background-color: #fff;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Titillium-Semibold';
+    font-weight: 600;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.social-icon-hide {
+    visibility: hidden;
+}
+
+#tabSelect ul li .hide-detail {
+    display: none;
+    bottom: 32px;
+}
+
+#tabSelect ul li.active .member-detail-nm,
+#tabSelect ul li.active .hide-detail {
+    display: block;
+    color: #212121
+}
+
+#tabSelect ul li.active .show-detail {
+    display: none;
+}
+
+.social-icon-white .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 15px;
+}
+
+.meet-crofarmers .tab-content {
+    padding: 0;
+}
+
+.meet-crofarmers .tab-content>.active {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+/*********** team detail ***********/
+
+.accordion {
+    margin: 0 0 1.5em 0;
+    padding: 0;
+}
+
+.accordion li {
+    list-style: none;
+}
+
+.accordion li>a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.accordion .is-expanded {
+    display: block;
+}
+
+.accordion ul.submenu {
+    display: none;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1046px;
+    padding-right: 50px;
+    text-align: left;
+    padding-top: 1.61792em;
+    padding-bottom: 2.61792em;
+    position: relative;
+}
+
+.team-member {
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: top;
+    float: none;
+    position: relative;
+    width: 248px;
+}
+
+
+/********************************************
+				TEAM SPRIT 
+/********************************************/
+
+section.team-sprit {
+    float: left;
+    width: 100%;
+    background-color: #d8e1e0;
+}
+
+.hd-team-sprit {
+    float: left;
+    width: 235px;
+    height: 180px;
+    background-color: #338b37;
+    color: #fff;
+    font-size: 48px;
+    padding: 15px;
+    text-align: center;
+}
+
+.member-detail {
+    padding: 45px;
+    float: left;
+    min-width: 400px;
+    font-size: 24px;
+}
+
+.member-detail .txt-small {
+    font-size: 18px;
+}
+
+.member-img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+
+.member-img img {
+    width: 100%;
+}
+
+.member-info {
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0.4px;
+    color: #727272;
+    min-width: 200px;
+    padding-left: 10px;
+}
+
+.team-sprit .message {
+    color: #727272;
+    padding: 30px 15px;
+    font-size: 16px;
+}
+
+.carousel-wrap {
+    float: left;
+    background-color: #fff;
+    width: 100%;
+}
+
+.img-detail {
+    width: 100%;
+    text-align: center;
+    color: #272727;
+    padding-top: 10px;
+}
+
+
+/********************************************************
+		F A R M E R    P A G E    S T Y L I N G 
+*********************************************************/
+
+.farmer-map {
+    padding-top: 20px;
+    border-radius: 6px;
+    border: solid 1px #eaeaea;
+}
+
+.farmer-map h4 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.farmer-map .map {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.retailer-map.farmer-map .map {
+    padding-bottom: 20px;
+}
+
+.farmer-map .horizontol_rule {
+    margin-left: 40px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.g-recaptcha {
+    margin: 20px 0;
+}
+
+.farmer-detail {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+    color: #33768b;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.g-recaptcha {
+    margin: 20px 0;
+}
+
+.farmer-form {
+    font-size: 16px;
+}
+
+.farmer-form .form-control {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid transparent;
+    /* border-radius: 4px; */
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075); */
+    box-shadow: none;
+    /* -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;*/
+    /*transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;*/
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.add-more {
+    font-size: 16px;
+    color: #33768b;
+    text-decoration: none;
+}
+
+.modal-footer {
+    padding: 0 20px 20px;
+    border: 0;
+}
+
+
+/**********************************************************
+				A P P S    S T Y L I N G
+**********************************************************/
+
+.store-app h3,
+.associate-app h3 {
+    font-family: 'Titillium-Regular';
+    margin: 30px 0 40px 0;
+    line-height: 25px;
+}
+
+.associate-app,
+.store-app {
+    float: left;
+    width: 100%;
+    padding: 100px 0 0;
+    position: relative;
+}
+
+.associate-app .content,
+.store-app .content {
+    padding: 20px 25px;
+    max-width: 510px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.associate-app {
+    background-color: #e0eef0;
+    min-height: 475px;
+    padding-top: 40px;
+}
+
+.associate-app .btn {
+    margin-bottom: 20px;
+}
+
+
+/**********************************END FARMER ***********/
+
+.footer {
+    background-color: #eeeeee;
+    padding: 35px 15px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+        display: inline-block;
+        padding-top: 5px;
+    }
+    .meet-crofarmers .nav.nav-tabs {
+        border: 0;
+        text-align: center;
+    }
+    .meet-crofarmers ul li {
+        text-align: left;
+        display: inline-block;
+        float: none;
+    }
+    .user-img-mobile,
+    .btn-show-less,
+    .btn-show-more {
+        display: none;
+    }
+    .btn.btn-primary.close-tab {
+        float: right;
+    }
+    .customer-satisfaction .content {
+        font-size: 24px;
+        max-width: 300px;
+    }
+    .farmer-form .col-md-12 {
+        padding: 0 15px 0 0;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    h1 {
+        font-size: 22px;
+        font-family: 'RobotoSlab-Regular';
+    }
+    h2 {
+        font-size: 20px;
+        font-family: 'RobotoSlab-Regular';
+    }
+    h3 {
+        font-size: 18px;
+        font-family: 'RobotoSlab-Regular';
+    }
+    .sub-hdr {
+        font-size: 20px;
+    }
+    .btn-yellow {
+        font-size: 18px;
+    }
+    .investors-view {
+        width: calc(100% - 150px);
+        float: right;
+    }
+    .factore {
+        border-left: 0;
+        padding: 3% 0 3%;
+    }
+    .pravega {
+        border-top: 0;
+        border-left: 0;
+        padding: 11% 0 5%;
+    }
+    .member-detail {
+        width: 100%;
+        min-width: 100%;
+        padding: 15px;
+    }
+    .news-carousel .col-md-3,
+    .news-carousel .col-sm-6,
+    .news-carousel .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .title {
+        left: 0;
+        width: 100%;
+    }
+    .carousel p {
+        font-size: 14px;
+    }
+    .home-farm-detail,
+    .home-retailer-detail {
+        width: 100%;
+        padding: 30px;
+        float: left;
+        background-size: auto 150%;
+        background-position: left bottom;
+        text-align: center;
+    }
+    .home-retailer-detail h2,
+    .home-farm-detail h2 {
+        line-height: 30px;
+    }
+    .our-features {
+        padding: 15px;
+    }
+    .location-wrapp {
+        background: url(../images/location-bg.jpg) 0 0 repeat;
+    }
+    .about-us-summery .content {
+        font-size: 18px;
+    }
+    .aboutus .row-crousel {
+        height: 350px;
+    }
+    .header-crousel .carousel p {
+        font-size: 20px;
+    }
+    .aboutus .header-crousel .carousel-inner .title {
+        width: 100%;
+    }
+    .content-img {
+        width: 100%;
+        min-height: auto;
+    }
+    .about-us-summery .content {
+        width: 100%;
+        float: right;
+    }
+    .hd-team-sprit {
+        height: auto;
+        width: 100%;
+        font-size: 24px;
+    }
+    .btn-show-less,
+    .btn-show-more {
+        float: left;
+        color: #33768b;
+        border: 1px solid #33768b;
+        padding: 6px 10px;
+        background-color: #fff;
+        z-index: 1;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Titillium-Semibold';
+        margin: 15px 0 10px;
+    }
+    .aboutus section.meet-crofarmers {
+        background-color: #fff;
+    }
+    .tab-pane .visible-xs h3 {
+        margin-top: 5px;
+    }
+    .meet-crofarmers .social-icon {
+        margin-bottom: 10px;
+    }
+    .user-img-mobile img {
+        width: 100%;
+        max-width: 150px;
+    }
+    .our-professionals {
+        padding: 0 30px 30px;
+    }
+    .professional-img {
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .our-professionals h3 {
+        line-height: 25px;
+    }
+    /**************** home page fixes ****************/
+    .our-partners h2 {
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+    .partner-img-wrap {
+        width: 120px;
+        height: 65px;
+        padding: 5px 5px;
+        margin: 15px 0;
+        text-align: center;
+        display: inline-block;
+    }
+    .customer-satisfaction .content {
+        background-color: rgba(256, 256, 256, .5);
+        float: left;
+        width: 100%;
+        padding: 10px 10px 0;
+    }
+    .office-location {
+        padding-bottom: 5px;
+    }
+    .apps h3,
+    .office-location h3 {
+        border-top: 1px solid #c2ae93;
+        padding: 15px 0 0;
+        font-size: 18px;
+        font-family: 'RobotoSlab-Regular';
+        margin: 20px 0 10px;
+    }
+    .office-location:first-child h3 {
+        border-top: 0;
+        padding: 0;
+    }
+    /************ about us fixes ***********/
+    .show-more,
+    .certificate-wrap,
+    .btn.btn-primary.close-tab,
+    .meet-crofarmers .nav.nav-tabs,
+    .btn-show-less,
+    .show-more .btn-show-more {
+        display: none;
+    }
+    .meet-crofarmers .tab-content>.tab-pane {
+        display: block;
+        opacity: 1;
+        float: left;
+        /*width: 100%;*/
+        margin: 10px;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 10px;
+    }
+    .show-more .show-more,
+    .show-more .btn-show-less {
+        display: block;
+    }
+    /********* apps fixes for mobile ********/
+    .associate-app {
+        padding-top: 0;
+    }
+    .associate-app .content {
+        min-height: 525px;
+    }
+    .associate-app .content,
+    .store-app .content {
+        margin-left: 0;
+    }
+    .store-app .content {
+        min-height: 300px;
+    }
+    .truck-on-road {
+        min-height: 130px;
+        background-size: contain;
+        background-position: left bottom;
+    }
+    .mobile-on-hand {
+        width: 140px;
+        height: 242px;
+        background-position: right bottom;
+    }
+    .mobile-on-hand-associate {
+        width: 225px;
+        height: 180px;
+    }
+    .features {
+        text-align: center;
+        padding: 15px 20px;
+        border-top: 1px solid #eee;
+    }
+    /*********************** farmer fixes for mobile **************/
+    .farmer .header-crousel .carousel p {
+        font-size: 20px;
+    }
+    .farmer .row-crousel {
+        padding-top: 50px;
+    }
+    .farmer .header-crousel .carousel p,
+    .farmer .header-crousel .carousel h1 {
+        text-align: center;
+    }
+    .farmer-map {
+        display: none;
+    }
+    .farmer-form .col-md-12 {
+        padding-left: 0;
+    }
+}
+
+.remove-collapsed {
+    width: 0;
+    height: 0;
+}
+
+.collapse.in .remove-collapsed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.know-our-investor {
+    font-size: 40px;
+    background-color: #47a0dd;
+    color: #fff;
+    padding: 53px 0 54px;
+    text-align: center;
+}
+
+
+/************ ipad fixes ***********/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .know-our-investor {
+        padding: 63px 0;
+        font-size: 40px;
+    }
+    .active>div.user-detail {
+        display: block;
+    }
+    .member-detail-nm h3 {
+        font-size: 15px;
+    }
+    .about-us-summery .content {
+        width: 100%;
+    }
+    .home-retailer-detail h2 {
+        min-height: 259px;
+    }
+    .about-us-summery .content-img {
+        float: left;
+    }
+    .team-tab-initial h4 {
+        font-size: 14px;
+        min-height: 30px;
+    }
+    .meet-crofarmers .social-icon {
+        min-height: 70px;
+    }
+    .hd-team-sprit {
+        width: 100%;
+        height: auto;
+    }
+    .review-wrapp {
+        width: 100% !important;
+    }
+    .associate-app .content,
+    .store-app .content {
+        padding: 20px 25px;
+        max-width: 450px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .associate-app h2,
+    .store-app h2 {
+        font-size: 30px;
+    }
+    .truck-on-road {
+        background-image: url(../images/truck_road.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 105px;
+    }
+    .mobile-on-hand {
+        width: 230px;
+        height: 260px;
+    }
+    .mobile-on-hand-associate {
+        width: 300px;
+        height: 240px;
+    }
+}
+
+
+/*
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+	.know-our-investor {
+		padding: 76px 0 77px;
+		font-size: 25px;
+	}
+}*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .factore {
+        float: left;
+        width: 100%;
+    }
+    .pravega {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .know-our-investor {
+        font-size: 20px;
+    }
+    .meet-crofarmers .nav.nav-tabs {
+        border: 0;
+        text-align: center;
+        display: table;
+        float: none;
+        padding: 0 5.5%;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+    .meet-crofarmers ul li {
+        /* text-align: left; */
+        display: inline-block;
+        float: none;
+        display: table-cell;
+        background-color: #fff;
+        vertical-align: top;
+    }
+    .meet-crofarmers ul li {
+        width: 33.3%;
+        position: relative;
+        padding: 0 0 0 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .know-our-investor {
+        font-size: 45px;
+    }
+    .meet-crofarmers .nav.nav-tabs {
+        border: 0;
+        text-align: center;
+        display: table;
+        float: none;
+        padding: 0 12.5%;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+    .meet-crofarmers ul li {
+        /* text-align: left; */
+        display: inline-block;
+        float: none;
+        display: table-cell;
+        background-color: #fff;
+        vertical-align: top;
+    }
+    .meet-crofarmers ul li {
+        width: 33.3%;
+        position: relative;
+        padding: 0 0 0 0;
+    }
+}
+
+.error,
+.custome-error {
+    color: #f00;
+    font-size: 12px;
+}
+
+
+/*
+@media screen and (min-width: 1401px) and (max-width: 1440px){
+	.know-our-investor {
+		font-size: 41px;
+        padding: 53px 0 54px;
+	}
+}
+@media screen and (min-width: 1441px) and (max-width: 1600px){
+	.know-our-investor {
+		font-size: 45px;
+        padding: 53px 0 54px;
+	}
+}
+@media screen and (min-width: 1601px){
+	.know-our-investor {
+		font-size: 53px;
+        padding: 53px 0 54px;
+	}
+}
+*/
